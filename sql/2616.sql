@@ -5,7 +5,7 @@ create table customers (
 	name varchar not null,
 	street varchar not null,
 	city varchar not null,
-	constraint PK_customer
+	constraint PK_customers
 		primary key (id)
 );
 
@@ -13,9 +13,9 @@ create table locations (
 	id numeric not null,
 	locations_date date not null,
 	id_customers numeric not null,
-	constraint PK_location
+	constraint PK_locations
 		primary key (id),
-	constraint FK_location_customer
+	constraint FK_locations_customers
 		foreign key (id_customers)
 		references customers(id)
 );
