@@ -16,7 +16,7 @@ public class Main {
             for (int j = 0; j*n < m; j++) sum += coins[m-j*n];
             
             boolean prime = true;
-            for (int k = 2; k < sum; k++) {
+            for (int k = 2; k <= Math.sqrt(sum); k++) {
                 if (sum % k == 0) { prime = false; break; }
             }
             
