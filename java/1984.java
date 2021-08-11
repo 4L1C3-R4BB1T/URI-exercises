@@ -8,9 +8,9 @@ public class Main {
         long n = sc.nextLong();
         String s = String.valueOf(n), inverted = "";
 		
-		for (int i = s.length()-1; i >= 0; i--) {
-			inverted += s.charAt(i);
-		}
+	    for (int i = s.length()-1; i >= 0; i--) {
+            inverted += s.charAt(i);
+        }
         
         System.out.println(inverted);
         
