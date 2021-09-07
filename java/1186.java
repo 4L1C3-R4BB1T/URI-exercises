@@ -5,7 +5,7 @@ public class Main {
  
         Scanner sc = new Scanner(System.in);
         
-        int o = sc.next().charAt(0);
+        char o = sc.next().charAt(0);
         double m[][] = new double[12][12], sum = 0;
         
         for (int i = 0; i < 12; i++) {
