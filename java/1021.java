@@ -12,17 +12,17 @@ public class Main {
         
         System.out.println("NOTAS:");
         for (int nota : notas) {
-        	int qtdNotas = (int) (valor/nota);
-        	valor %= nota;
-        	System.out.printf("%d nota(s) de R$ %.2f\n", qtdNotas, (double) nota);
+            int qtdNotas = (int) (valor/nota);
+            valor %= nota;
+            System.out.printf("%d nota(s) de R$ %.2f\n", qtdNotas, (double) nota);
         }
      
         System.out.println("MOEDAS:");
         for (double moeda : moedas) {
             valor = Math.round(valor*100.0)/100.0;
-        	int qtdMoedas = (int) (valor/moeda);
-        	valor %= moeda;
-        	System.out.printf("%d moeda(s) de R$ %.2f\n", qtdMoedas, (double) moeda);
+            int qtdMoedas = (int) (valor/moeda);
+            valor %= moeda;
+            System.out.printf("%d moeda(s) de R$ %.2f\n", qtdMoedas, (double) moeda);
         }
         
         sc.close();
