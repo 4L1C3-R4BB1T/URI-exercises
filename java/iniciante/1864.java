@@ -7,13 +7,9 @@ public class Main {
         
         int n = sc.nextInt();
         
-        char letters[] = {'L', 'I', 'F', 'E', ' ', 'I', 'S', ' ', 
-            'N', 'O', 'T', ' ', 'A', ' ', 'P', 'R', 'O', 'B', 'L', 'E', 'M', ' ', 
-            'T', 'O', ' ', 'B', 'E', ' ', 'S', 'O', 'L', 'V', 'E', 'D'};
+        String s = "LIFE IS NOT A PROBLEM TO BE SOLVED";    
         
-        for (int i = 0; i < n; i++) System.out.print(letters[i]); 
-        
-        System.out.print('\n');
+        System.out.println(s.substring(0, n));
 
         sc.close();
  
