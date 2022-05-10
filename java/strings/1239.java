@@ -10,11 +10,11 @@ public class Main {
             
             // enquanto houverem _ ou *, eles serao substituidos
             while (s.contains("_") || s.contains("*")) {
-			    s = s.replaceFirst("_", "<i>")
-				    .replaceFirst("_", "</i>")
-				    .replaceFirst("\\*", "<b>")
-				    .replaceFirst("\\*", "</b>");
-		    }
+                s = s.replaceFirst("_", "<i>")
+                    .replaceFirst("_", "</i>")
+                    .replaceFirst("\\*", "<b>")
+                    .replaceFirst("\\*", "</b>");
+            }
             
             System.out.println(s);
         }
